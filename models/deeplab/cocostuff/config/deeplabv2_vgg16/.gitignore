@@ -1,0 +1,3 @@
+solver_train.prototxt
+test_val.prototxt
+train_train.prototxt
