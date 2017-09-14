@@ -2,13 +2,13 @@
 
 ## MODIFY PATH for YOUR SETTING
 ROOT_DIR=
-CAFFE_DIR=deeplab-public-ver2
+CAFFE_DIR=deeplab-v2
 CAFFE_BIN=${CAFFE_DIR}/.build_release/tools/caffe.bin
 EPOCH=20000 # -1 means we don't resume snapshots
 EXP=cocostuff
 
 if [ "${EXP}" = "cocostuff" ]; then
-    NUM_LABELS=184
+    NUM_LABELS=93
     DATA_ROOT=${EXP}/data
 else
     NUM_LABELS=0
@@ -38,7 +38,7 @@ export GLOG_log_dir=${LOG_DIR}
 
 ## Run
 RUN_TRAIN=1
-RUN_TEST=1
+RUN_TEST=0 #TODO: set to 1
 
 ## Training #1 
 

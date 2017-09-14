@@ -30,9 +30,9 @@ layer {
   transform_param {
     mirror: true
     crop_size: 321
-    mean_value: 104.008
-    mean_value: 116.669
-    mean_value: 122.675
+    mean_value: 104.5 # adapted to COCO
+    mean_value: 114.6
+    mean_value: 120.6
   }
   image_data_param {
     root_folder: "${DATA_ROOT}"
@@ -853,7 +853,7 @@ layer {
     phase: TRAIN
   }
   loss_param {
-    ignore_label: 0
+    ignore_label: 255
   }
 }
 layer {
@@ -863,7 +863,7 @@ layer {
   bottom: "label_shrink"
   top: "accuracy"
   seg_accuracy_param {
-    ignore_label: 0
+    ignore_label: 255
   }
 }
 layer {
