@@ -1,3 +1,4 @@
 solver_train.prototxt
 test_val.prototxt
+test_test.prototxt
 train_train.prototxt

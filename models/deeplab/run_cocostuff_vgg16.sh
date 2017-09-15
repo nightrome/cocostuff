@@ -38,7 +38,7 @@ export GLOG_log_dir=${LOG_DIR}
 
 ## Run
 RUN_TRAIN=1
-RUN_TEST=0 #TODO: set to 1
+RUN_TEST=1
 
 ## Training #1 
 

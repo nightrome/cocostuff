@@ -21,9 +21,9 @@ layer {
   transform_param {
     mirror: false
     crop_size: 641
-    mean_value: 104.5 # adapted to COCO
-    mean_value: 114.6
-    mean_value: 120.6
+    mean_value: 104.0 # adapted to COCO
+    mean_value: 114.1
+    mean_value: 120.1
   }
   image_data_param {
     root_folder: "${DATA_ROOT}"
