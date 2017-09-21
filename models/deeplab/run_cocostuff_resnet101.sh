@@ -18,7 +18,7 @@ fi
 
 ## Specify which model to train
 ########### voc12 ################
-NET_ID=deeplabv2_vgg16
+NET_ID=deeplabv2_resnet101
 if [ "${EPOCH}" -ne "-1" ]; then
   SNAPSHOT=${EXP}/model/${NET_ID}/train_iter_${EPOCH}.solverstate
 fi
@@ -46,7 +46,7 @@ if [ ${RUN_TRAIN} -eq 1 ]; then
     LIST_DIR=${EXP}/list
     TRAIN_SET=train${TRAIN_SET_SUFFIX}
     #
-    MODEL=${EXP}/model/${NET_ID}/deeplabv2_vgg16_init.caffemodel
+    MODEL=${EXP}/model/${NET_ID}/deeplabv2_resnet101_init.caffemodel
     #
     echo Training net ${EXP}/${NET_ID}
     for pname in train solver; do
@@ -69,7 +69,7 @@ fi
 ## Test specification 
 if [ ${RUN_TEST} -eq 1 ]; then
     #
-    for TEST_SET in val; do
+    for TEST_SET in val513; do
 				TEST_ITER=`cat ${EXP}/list/${TEST_SET}.txt | wc -l`
 				MODEL=${EXP}/model/${NET_ID}/test.caffemodel
 				if [ ! -f ${MODEL} ]; then
@@ -78,14 +78,14 @@ if [ ${RUN_TEST} -eq 1 ]; then
 				#
 				echo Testing net ${EXP}/${NET_ID}
 				FEATURE_DIR=${EXP}/features/${NET_ID}
-				mkdir -p ${FEATURE_DIR}/${TEST_SET}/fc8
+				mkdir -p ${FEATURE_DIR}/${TEST_SET}/fc1
 				sed "$(eval echo $(cat sub.sed))" \
 						${CONFIG_DIR}/test.prototxt > ${CONFIG_DIR}/test_${TEST_SET}.prototxt
 				CMD="${CAFFE_BIN} test \
-                                --model=${CONFIG_DIR}/test_${TEST_SET}.prototxt \
-                                --weights=${MODEL} \
-                                --gpu=${DEV_ID} \
-                                --iterations=${TEST_ITER}"
+             			--model=${CONFIG_DIR}/test_${TEST_SET}.prototxt \
+             			--weights=${MODEL} \
+             			--gpu=${DEV_ID} \
+             			--iterations=${TEST_ITER}"
 				echo Running ${CMD} && ${CMD}
     done
 fi
