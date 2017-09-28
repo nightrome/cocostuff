@@ -37,7 +37,7 @@ mkdir -p ${LOG_DIR}
 export GLOG_log_dir=${LOG_DIR}
 
 ## Run
-RUN_TRAIN=1
+RUN_TRAIN=0
 RUN_TEST=1
 
 ## Training
@@ -69,7 +69,7 @@ fi
 ## Test specification 
 if [ ${RUN_TEST} -eq 1 ]; then
     #
-    for TEST_SET in val513; do
+    for TEST_SET in test513; do
 				TEST_ITER=`cat ${EXP}/list/${TEST_SET}.txt | wc -l`
 				MODEL=${EXP}/model/${NET_ID}/test.caffemodel
 				if [ ! -f ${MODEL} ]; then
