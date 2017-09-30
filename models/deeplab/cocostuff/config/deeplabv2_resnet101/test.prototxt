@@ -11,7 +11,7 @@ layer {
   }
   transform_param {
     mirror: false
-    crop_size: 513
+    crop_size: 353 # TODO: set back to 513
     mean_value: 104.0 # adapted to COCO
     mean_value: 114.1
     mean_value: 120.1
@@ -21816,7 +21816,7 @@ layer {
     phase: TEST
   }
   mat_write_param {
-    prefix: "${FEATURE_DIR}/${TEST_SET}/fc8/"
+    prefix: "${FEATURE_DIR}/${TEST_SET}/fc1/"
     source: "${EXP}/list/${TEST_SET}_id.txt"
     strip: 0
     period: 1

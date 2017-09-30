@@ -13,4 +13,4 @@ weight_decay: 0.0005
 
 snapshot: 10000
 snapshot_prefix: "${EXP}/model/${NET_ID}/train"
-solver_mode: CPU
+solver_mode: GPU

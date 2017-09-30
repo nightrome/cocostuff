@@ -23,7 +23,7 @@ if [ "${EPOCH}" -ne "-1" ]; then
   SNAPSHOT=${EXP}/model/${NET_ID}/train_iter_${EPOCH}.solverstate
 fi
 
-DEV_ID=0
+DEV_ID=1
 
 #####
 
@@ -84,8 +84,8 @@ if [ ${RUN_TEST} -eq 1 ]; then
 				CMD="${CAFFE_BIN} test \
              			--model=${CONFIG_DIR}/test_${TEST_SET}.prototxt \
              			--weights=${MODEL} \
-             			--gpu=${DEV_ID} \
-             			--iterations=${TEST_ITER}"
+                                --iterations=${TEST_ITER} \
+             			--gpu=${DEV_ID}"
 				echo Running ${CMD} && ${CMD}
     done
 fi
