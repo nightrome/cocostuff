@@ -41,7 +41,7 @@ Filename | Description | Size
 To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
 
 ## Results
-### Results on the validation set of COCO-Stuff 164K:
+### Results on the val set of COCO-Stuff 164K:
 Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
 Deeplab VGG-16 (no CRF) [4] | [1] | 45.1%               | 63.6%           | 33.2%     | 47.6%
@@ -52,7 +52,7 @@ Note that the results between the 10K dataset and the 164K dataset are not direc
 Please refer to the [official leaderboard](http://cocodataset.org/#stuff-leaderboard).
 Note that these results are not comparable to other COCO-Stuff results, as the challenge only includes a single thing class 'other'.
 
-### Results on the validation set of COCO-Stuff 10K:
+### Results on the val set of COCO-Stuff 10K:
 Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
 FCN-16s [3]           | [1b]   | 34.0%                   | 52.0%           | 22.7%    | -
