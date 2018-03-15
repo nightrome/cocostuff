@@ -32,7 +32,9 @@ Filename | Description | Size
 --- | --- | ---
 [train2017.zip](http://images.cocodataset.org/zips/train2017.zip) | COCO 2017 train images (118K images, external link) | 18 GB
 [val2017.zip](http://images.cocodataset.org/zips/val2017.zip) | COCO 2017 val images (5K images, external link) | 1 GB
-Stuff annotations | TODO (coming soon) |
+[stuff_train2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_train2017.json) | Stuff-only annotations on COCO 2017 train | 1.2 GB
+[stuff_val2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_val2017.json) | Stuff-only annotations on COCO 2017 val | 48.9 MB
+[annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only annotations on COCO 2017 trainval | 
 [cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | Indices, names and descriptions of the classes in COCO-Stuff | 2.3 KB
 [cocostuff-readme.txt](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This readme | 6.5 KB
 
