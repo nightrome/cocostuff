@@ -40,7 +40,7 @@ To download earlier versions of this dataset, please visit the [COCO 2017 Stuff 
 
 ## Results
 ### Results on the validation set of COCO-Stuff 164K:
-Method                | Source| Class-average accuracy  | Global accuracy | Mean IOU | FW IOU
+Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
 Deeplab VGG-16 (no CRF) [4] | [1] | 45.1%               | 63.6%           | 33.2%     | 47.6%
 
@@ -51,7 +51,7 @@ Please refer to the [official leaderboard](http://cocodataset.org/#stuff-leaderb
 Note that these results are not comparable to other COCO-Stuff results, as the challenge only includes a single thing class 'other'.
 
 ### Results on the validation set of COCO-Stuff 10K:
-Method                | Source| Class-average accuracy  | Global accuracy | Mean IOU | FW IOU
+Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
 FCN-16s [3]           | [1b]   | 34.0%                   | 52.0%           | 22.7%    | -
 Deeplab VGG-16 (no CRF) [4] | [1b] | 38.1%               | 57.8%           | 26.9%    | -
