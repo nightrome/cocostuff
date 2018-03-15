@@ -30,13 +30,13 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 ## Downloads
 Filename | Description | Size
 --- | --- | ---
-[train2017.zip](http://images.cocodataset.org/zips/train2017.zip) | COCO 2017 train images (118K images, external link) | 18 GB
-[val2017.zip](http://images.cocodataset.org/zips/val2017.zip) | COCO 2017 val images (5K images, external link) | 1 GB
-[stuff_train2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_train2017.json) | Stuff-only annotations on COCO 2017 train | 1.2 GB
-[stuff_val2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_val2017.json) | Stuff-only annotations on COCO 2017 val | 48.9 MB
-[annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only annotations on COCO 2017 trainval | 
-[cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | Indices, names and descriptions of the classes in COCO-Stuff | 2.3 KB
-[cocostuff-readme.txt](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This readme | 6.5 KB
+[train2017.zip](http://images.cocodataset.org/zips/train2017.zip) | COCO 2017 train images (118K images) | 18 GB
+[val2017.zip](http://images.cocodataset.org/zips/val2017.zip) | COCO 2017 val images (5K images) | 1 GB
+[stuff_train2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_train2017.json) | Stuff-only COCO-style annotations on COCO 2017 train | 1 GB
+[stuff_val2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_val2017.json) | Stuff-only COCO-style annotations on COCO 2017 val | 49 MB
+[annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only COCO-style annotations on COCO 2017 trainval | 241 MB
+[cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | Indices, names and descriptions of the classes in COCO-Stuff | 2 KB
+[README.md](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This readme | <10 KB
 
 To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
 
