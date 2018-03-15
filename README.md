@@ -7,8 +7,9 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 
 ## Overview
 - [Highlights](#highlights)
-- [Updates](#updates)
-- [Dataset](#dataset)
+- [Downloads](#downloads)
+- [Results](#results)
+- [Details](#details)
 - [Semantic Segmentation Models](#semantic-segmentation-models)
 - [Annotation Tool](#annotation-tool)
 - [Misc](#misc)
@@ -21,21 +22,38 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - Complex spatial context between stuff and things
 - 5 captions per image from COCO [2]
 
-## Updates
-- 01 Apr 2017: Published full COCO-Stuff 164K dataset
-
 ## Versions of COCO-Stuff
 - [COCO-Stuff 10K dataset](https://github.com/nightrome/cocostuff10k): Our first dataset, annotated by 10 in-house annotators at the University of Edinburgh. It includes 10K images from the training set of COCO. We provide a 9K/1K split to make results comparable. The dataset includes 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This was initially presented as 91 thing classes, but is now changed to 80 thing classes, as 11 classes in COCO are missing or removed. This dataset is a subset of all later releases.
 - [COCO Stuff Segmentation Challenge 2017](http://cocodataset.org/#stuff-challenge2017): A semantic segmentation challenge on 55K images (train 40K, val 5K, test-dev 5K, test-challenge 5K) of COCO. To focus on stuff, we merged all 80 thing classes into a single class 'other'. The results of the challenge were released at the [Joint COCO and Places Recognition Workshop at ICCV 2017](https://places-coco2017.github.io/).
-- [COCO-Stuff 164K dataset](https://github.com/nightrome/cocostuff164k): The final version of COCO-Stuff, that is presented on this page. It includes all 164K images from COCO 2017 (train 118K, val 5K, test-dev 20K, test-challenge 20K). It covers 172 classes: 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This dataset will form the basis of all upcoming challenges, such as the COCO Panoptic Segmentation Challenge 2018.
+- [COCO-Stuff 164K dataset](https://github.com/nightrome/cocostuff164k): The final version of COCO-Stuff, that is presented on this page. It includes all 164K images from COCO 2017 (train 118K, val 5K, test-dev 20K, test-challenge 20K). It covers 172 classes: 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This dataset will form the basis of all upcoming challenges.
 
-## Dataset
+## Downloads
 Filename | Description | Size
 --- | --- | ---
+[train2017.zip](http://images.cocodataset.org/zips/train2017.zip) | COCO 2017 train images (118K images, external link) | 18 GB
+[val2017.zip](http://images.cocodataset.org/zips/val2017.zip) | COCO 2017 val images (5K images, external link) | 1 GB
 Stuff annotations | TODO (coming soon) |
-[cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | A list of the 1+91+91 classes in COCO-Stuff | 2.3 KB
-[cocostuff-readme.txt](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This document | 6.5 KB
+[cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | Indices, names and descriptions of the classes in COCO-Stuff | 2.3 KB
+[cocostuff-readme.txt](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This readme | 6.5 KB
 
+## Results
+### Results on the validation set of COCO-Stuff 164K:
+Method                | Source| Class-average accuracy  | Global accuracy | Mean IOU | FW IOU
+---                   | ---   | ---                     | ---             | ---      | ---
+Deeplab VGG-16 (no CRF) [4] | [1] | 45.1%               | 63.6%           | 33.2%     | 47.6%
+
+### Results on the validation set of COCO-Stuff 10K:
+Method                | Source| Class-average accuracy  | Global accuracy | Mean IOU | FW IOU
+---                   | ---   | ---                     | ---             | ---      | ---
+FCN-16s [3]           | [1b]   | 34.0%                   | 52.0%           | 22.7%    | -
+Deeplab VGG-16 (no CRF) [4] | [1b] | 38.1%               | 57.8%           | 26.9%    | -
+FCN-8s [3]            | [6]   | 38.5%                   | 60.4%           | 27.2%    | -
+DAG-RNN + CRF [6]     | [6]   | 42.8%                   | 63.0%           | 31.2%    | -
+OHE + DC + FCN+ [5]   | [5]   | **45.8%**               | **66.6%**       | 34.3%    | **51.2%**
+Deeplab ResNet (no CRF) [4]   | -   | 45.5%               | 65.1%           | 34.4%    | 50.4%
+W2V + DC + FCN+ [5]   | [5]   | 45.1%                   | 66.1%           | **34.7%**| 51.0%
+
+## Details
 ### Label Names & Indices
 To be compatible with COCO, COCO-Stuff has 91 thing classes (1-91), 91 stuff classes (92-182) and 1 class "unlabeled" (0). Note that 11 of the thing classes of COCO do not have any segmentation annotations. The classes desk, door and mirror could be either stuff or things and therefore occur in both COCO and COCO-Stuff. To avoid confusion we add the suffix "-stuff" to those classes in COCO-Stuff. The full list of classes can be found [here](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt).
 
@@ -52,6 +70,10 @@ For the Matlab annotation tool used to annotate the initial 10K images, please r
 ## Misc
 ### References
 - [1] [COCO-Stuff: Thing and Stuff Classes in Context](https://arxiv.org/abs/1612.03716)<br />
+H. Caesar, J. Uijlings, V. Ferrari,<br />
+In *Computer Vision and Pattern Recognition* (CVPR), 2018.<br />
+
+- [1b] [COCO-Stuff: Thing and Stuff Classes in Context](https://arxiv.org/abs/1612.03716v1)<br />
 H. Caesar, J. Uijlings, V. Ferrari,<br />
 In *arXiv preprint arXiv:1612.03716*, 2017.<br />
 
