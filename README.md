@@ -32,12 +32,16 @@ Filename | Description | Size
 --- | --- | ---
 [train2017.zip](http://images.cocodataset.org/zips/train2017.zip) | COCO 2017 train images (118K images) | 18 GB
 [val2017.zip](http://images.cocodataset.org/zips/val2017.zip) | COCO 2017 val images (5K images) | 1 GB
-[stuff_train2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_train2017.json) | Stuff-only COCO-style annotations on COCO 2017 train | 1 GB
-[stuff_val2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_val2017.json) | Stuff-only COCO-style annotations on COCO 2017 val | 49 MB
+[stuffthingmaps_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip) | Stuff+thing PNG-style annotations on COCO 2017 trainval | 659 MB
+[stuff_trainval2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_trainva2017.json) | Stuff-only COCO-style annotations on COCO 2017 trainval | 543 MB
 [annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only COCO-style annotations on COCO 2017 trainval | 241 MB
 [cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | Indices, names and descriptions of the classes in COCO-Stuff | 2 KB
 [README.md](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This readme | <10 KB
 
+To use this dataset you will need to download the images (18+1 GB!) and annotations of the trainval sets.
+We sugggest using the stuffthingmaps, as they provide all stuff and thing labels in a single .png file per image.
+To make these compatible with most Caffe-based semantic segmentation methods, thing+stuff labels cover indices 0-171 and 255 indicates the 'unlabeled' or void class.
+Alternatively you can download the separate files for stuff and thing annotations in COCO format, which are compatible with the [COCO-Stuff API](https://github.com/nightrome/cocoapi).
 To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
 
 ## Results
