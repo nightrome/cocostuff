@@ -35,7 +35,7 @@ Filename | Description | Size
 [stuffthingmaps_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip) | Stuff+thing PNG-style annotations on COCO 2017 trainval | 659 MB
 [stuff_trainval2017.json](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_trainva2017.json) | Stuff-only COCO-style annotations on COCO 2017 trainval | 543 MB
 [annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only COCO-style annotations on COCO 2017 trainval | 241 MB
-[cocostuff-labels.txt](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt) | Indices, names and descriptions of the classes in COCO-Stuff | 2 KB
+[labels.md](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/labels.md) | Indices, names, previews and descriptions of the classes in COCO-Stuff | 2 KB
 [README.md](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/README.md) | This readme | <10 KB
 
 To use this dataset you will need to download the images (18+1 GB!) and annotations of the trainval sets.
@@ -69,7 +69,7 @@ W2V + DC + FCN+ [5]   | [5]   | 45.1%                   | 66.1%           | **34
 
 ## Details
 ### Label Names & Indices
-To be compatible with COCO, COCO-Stuff has 91 thing classes (1-91), 91 stuff classes (92-182) and 1 class "unlabeled" (0). Note that 11 of the thing classes of COCO do not have any segmentation annotations (blender, desk, door, eye glasses, hair brush, hat, mirror, plate, shoe, street sign, window). The classes desk, door, mirror and window could be either stuff or things and therefore occur in both COCO and COCO-Stuff. To avoid confusion we add the suffix "-stuff" or "-other" to those classes in COCO-Stuff. The full list of classes and their descriptions can be found [here](https://raw.githubusercontent.com/nightrome/cocostuff10k/master/dataset/cocostuff-labels.txt).
+To be compatible with COCO, COCO-Stuff has 91 thing classes (1-91), 91 stuff classes (92-182) and 1 class "unlabeled" (0). Note that 11 of the thing classes of COCO do not have any segmentation annotations (blender, desk, door, eye glasses, hair brush, hat, mirror, plate, shoe, street sign, window). The classes desk, door, mirror and window could be either stuff or things and therefore occur in both COCO and COCO-Stuff. To avoid confusion we add the suffix "-stuff" or "-other" to those classes in COCO-Stuff. The full list of classes and their descriptions can be found [here](https://raw.githubusercontent.com/nightrome/cocostuff164k/master/labels.md).
 
 ### Label Hierarchy
 This figure shows the label hierarchy of COCO-Stuff including all stuff and thing classes:
