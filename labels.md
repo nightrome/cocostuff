@@ -2,7 +2,11 @@
 Below we present an overview of the labels in COCO-Stuff, as well as their indices and descriptions.
 We also include a preview image for each class that shows 4 example images with regions (i.e. connected components in the label map - we do not have instance annotations for stuff classes) of the particular class.
 Note that we only provide descriptions for stuff labels (92-182).
-Furtheremore, 11 classes have been removed from COCO and therefore lack a preview image.
+Furthermore, 11 classes have been removed from COCO and therefore lack a preview image.
+
+Note that despite our best efforts to make labels unambiguous, crowd-sourced annotations are never free of errors.
+In particular, the label 'clothes' is often assigned to incompletely annotated persons (which it should not).
+Furthermore, the difference between 'cupboard' and 'cabinet' and 'fog' and 'sky-clouds' is not always clear from the annotations.
 
 Id	|	Label name	|	Preview	|	Description
 ---	|	---	|	---	|	---
