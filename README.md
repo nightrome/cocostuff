@@ -113,8 +113,8 @@ In *IEEE Transactions on Pattern Analysis and Machine Intelligence* (PAMI), 2017
 
 ### Licensing
 COCO-Stuff is a derivative work of the COCO dataset. The authors of COCO do not in any form endorse this work. Different licenses apply:
-- COCO images: [Flickr Terms of use](http://mscoco.org/terms_of_use/)
-- COCO annotations: [Creative Commons Attribution 4.0 License](http://mscoco.org/terms_of_use/)
+- COCO images: [Flickr Terms of use](http://cocodataset.org/#termsofuse)
+- COCO annotations: [Creative Commons Attribution 4.0 License](http://cocodataset.org/#termsofuse)
 - COCO-Stuff annotations & code: [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
 ### Acknowledgements
