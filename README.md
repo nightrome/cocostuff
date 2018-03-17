@@ -35,7 +35,7 @@ Filename | Description | Size
 [stuffthingmaps_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip) | Stuff+thing PNG-style annotations on COCO 2017 trainval | 659 MB
 [stuff_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_trainval2017.zip) | Stuff-only COCO-style annotations on COCO 2017 trainval | 543 MB
 [annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only COCO-style annotations on COCO 2017 trainval | 241 MB
-[labels.md](https://github.com/nightrome/cocostuff164k/blob/master/labels.md) | Indices, names, previews and descriptions of the classes in COCO-Stuff | 2 KB
+[labels.md](https://github.com/nightrome/cocostuff164k/blob/master/labels.md) | Indices, names, previews and descriptions of the classes in COCO-Stuff | <10 KB
 [README.md](https://github.com/nightrome/cocostuff164k/blob/master/README.md) | This readme | <10 KB
 
 To use this dataset you will need to download the images (18+1 GB!) and annotations of the trainval sets.
