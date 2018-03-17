@@ -6,7 +6,7 @@ CAFFE_DIR=deeplab-v2
 CAFFE_BIN=${CAFFE_DIR}/.build_release/tools/caffe.bin
 EPOCH=100000 # -1 means we don't resume snapshots
 EXP=cocostuff
-MODEL_NAME=model80kimages
+MODEL_NAME=model120kimages
 
 if [ "${EXP}" = "cocostuff" ]; then
     NUM_LABELS=182
@@ -25,7 +25,7 @@ if [ "${EPOCH}" -ne "-1" ]; then
   echo "Continuing from snapsnot ${SNAPSHOT}..."
 fi
 
-DEV_ID=1
+DEV_ID=0
 
 #####
 
@@ -39,7 +39,7 @@ mkdir -p ${LOG_DIR}
 export GLOG_log_dir=${LOG_DIR}
 
 ## Run
-RUN_TRAIN=0
+RUN_TRAIN=1
 RUN_TEST=1
 
 ## Training
