@@ -36,7 +36,7 @@ layer {
   }
   image_data_param {
     root_folder: "${DATA_ROOT}"
-    source: "${EXP}/list/${TRAIN_SET}.txt"
+    source: "${EXP}/list/${TRAIN_SET}-${MODEL_NAME}.txt"
     batch_size: 10
     shuffle: true
     label_type: PIXEL
