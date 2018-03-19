@@ -8,6 +8,7 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - [Highlights](#highlights)
 - [Versions of COCO-Stuff](#versions-of-coco-stuff)
 - [Downloads](#downloads)
+- [Setup](#setup)
 - [Results](#results)
 - [Details](#details)
 - [Semantic Segmentation Models](#semantic-segmentation-models)
@@ -44,6 +45,28 @@ To make these compatible with most Caffe-based semantic segmentation methods, th
 Alternatively you can download the separate files for stuff and thing annotations in COCO format, which are compatible with the [COCO-Stuff API](https://github.com/nightrome/cocoapi).
 To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
 
+## Setup
+Use the following instructions to download the COCO-Stuff dataset and setup the folder structure.
+The instructions are for Ubuntu and require git, wget and unzip.
+On other operating systems the commands may differ:
+```
+# Get this repo
+git clone https://github.com/nightrome/cocostuff164k.git
+cd cocostuff164k
+
+# Download everything
+wget --directory-prefix=downloads http://images.cocodataset.org/zips/train2017.zip
+wget --directory-prefix=downloads http://images.cocodataset.org/zips/val2017.zip
+wget --directory-prefix=downloads http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip
+
+# Unpack everything
+mkdir -p dataset/images
+mkdir -p dataset/annotations
+unzip downloads/train2017.zip -d dataset/images/
+unzip downloads/val2017.zip -d dataset/images/
+unzip downloads/stuffthingmaps_trainval2017.zip -d dataset/annotations/
+```
+
 ## Results
 ### Results on the val set of COCO-Stuff 164K:
 Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
@@ -76,7 +99,36 @@ This figure shows the label hierarchy of COCO-Stuff including all stuff and thin
 <img src="https://github.com/nightrome/cocostuff10k/blob/master/dataset/cocostuff-labelhierarchy.png?raw=true" alt="COCO-Stuff label hierarchy" width="100%">
 
 ## Semantic Segmentation Models
-TODO (Coming soon)
+Before using the semantic segmentation model, please [setup the dataset](#setup).
+The commands below download and install Deeplab (incl. Caffe), download or train the model and predictions and evaluate the performance. The results should be the same as in [this table](#results):
+```
+# Get and install Deeplab (you may need to change settings)
+# We use a special version of Deeplab v2 that supports CuDNN v5, but others may work as well.
+git submodule update --init models/deeplab/deeplab-v2
+cd models/deeplab/deeplab-v2
+cp Makefile.config.example Makefile.config
+make all -j8
+
+# Create symbolic links to the images and annotations
+cd models/deeplab/cocostuff/data && ln -s ../../../../dataset/images images && ln -s ../../../../dataset/annotations annotations && cd ../../../..
+
+# Option 1: Download the initial model
+# wget --directory-prefix=models/deeplab/cocostuff/model/deeplabv2_vgg16 http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplabv2_vgg16_init.caffemodel
+
+# Option 2: Download the trained model
+# wg --directory-prefix=downloads http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplab_cocostuff_trainedmodel.zip
+# zip downloads/deeplab_cocostuff_trainedmodel.zip -d models/deeplab/cocostuff/model/deeplabv2_vgg16/model120kimages/
+
+# Option 3: Run training & test
+# cd models/deeplab && ./run_cocostuff_vgg16.sh && cd ../..
+
+# Option 4 (fastest): Download predictions
+wget --directory-prefix=downloads http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplab_predictions_cocostuff_val2017.zip
+unzip downloads/deeplab_predictions_cocostuff_val2017.zip -d models/deeplab/cocostuff/features/deeplabv2_vgg16/model120kimages/val/fc8/
+
+# Evaluate performance
+python models/deeplab/evaluate_performance.py
+```
 
 ## Annotation Tool
 For the Matlab annotation tool used to annotate the initial 10K images, please refer to [this repository](https://github.com/nightrome/cocostuff10k#annotation-tool).
