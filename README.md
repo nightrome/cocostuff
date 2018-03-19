@@ -75,19 +75,25 @@ Deeplab VGG-16 (no CRF) [4] | [1] | 45.1%               | 63.6%           | 33.2
 
 Note that the results between the 10K dataset and the 164K dataset are not direclty comparable, as different train and val images are used. Furthermore, on the 164K dataset we train Deeplab for 100K iterations [1], compared to 20K iterations on the 10K dataset [1b].
 
-### Results of the COCO 2017 Stuff Segmentation Challenge:
-Please refer to the [official leaderboard](http://cocodataset.org/#stuff-leaderboard).
+### Results on the val set of the COCO 2017 Stuff Segmentation Challenge:
+We show results on the val set of the challenge.
+Please refer to the [official leaderboard](http://cocodataset.org/#stuff-leaderboard) for results on the test-dev and test-challenge sets.
 Note that these results are not comparable to other COCO-Stuff results, as the challenge only includes a single thing class 'other'.
 
-### Results on the val set of COCO-Stuff 10K:
 Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
+---                   | ---   | ---             | ---            | ---      | ---
+Inplace-ABN sync      | [8]   | -               | -              | 24.9%    | -
+
+### Results on the val set of COCO-Stuff 10K:
+Method                | Source| Class accuracy          | Pixel accuracy  | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
-FCN-16s [3]           | [1b]   | 34.0%                   | 52.0%           | 22.7%    | -
-Deeplab VGG-16 (no CRF) [4] | [1b] | 38.1%               | 57.8%           | 26.9%    | -
+FCN-16s [3]           | [1b]  | 34.0%                   | 52.0%           | 22.7%    | -
+Deeplab VGG-16 (no CRF) [4] | [1b] | 38.1%              | 57.8%           | 26.9%    | -
 FCN-8s [3]            | [6]   | 38.5%                   | 60.4%           | 27.2%    | -
+SCA VGG-16 [7]        | [7]   | 42.5%                   | 61.6%           | 29.1%    | -
 DAG-RNN + CRF [6]     | [6]   | 42.8%                   | 63.0%           | 31.2%    | -
 OHE + DC + FCN+ [5]   | [5]   | **45.8%**               | **66.6%**       | 34.3%    | **51.2%**
-Deeplab ResNet (no CRF) [4]   | -   | 45.5%               | 65.1%           | 34.4%    | 50.4%
+Deeplab ResNet (no CRF) [4]   | -   | 45.5%             | 65.1%           | 34.4%    | 50.4%
 W2V + DC + FCN+ [5]   | [5]   | 45.1%                   | 66.1%           | **34.7%**| 51.0%
 
 ## Details
@@ -172,6 +178,14 @@ In *arXiv preprint arXiv:1703.09891*, 2017.<br />
 - [6] [Scene Segmentation with DAG-Recurrent Neural Networks](http://ieeexplore.ieee.org/abstract/document/7940028/)<br />
 B. Shuai, Z. Zuo, B. Wang<br />
 In *IEEE Transactions on Pattern Analysis and Machine Intelligence* (PAMI), 2017.<br />
+
+- [7] [Neuron-level Selective Context Aggregation for Scene Segmentation](https://arxiv.org/abs/1711.08278)<br />
+Z. Wang, F. Gu, D. Lischinski, D. Cohen-Or, C. Tu, B. Chen<br />
+In *arXiv preprint arXiv:1711.08278*, 2017.<br />
+
+- [8] [In-Place Activated BatchNorm for Memory-Optimized Training of DNNs](https://arxiv.org/abs/1712.02616)<br />
+S. R. Bulò, L. Porzi, P. Kontschieder <br />
+In *arXiv preprint arXiv:1712.02616*, 2017.<br />
 
 ### Licensing
 COCO-Stuff is a derivative work of the COCO dataset. The authors of COCO do not in any form endorse this work. Different licenses apply:
