@@ -130,6 +130,16 @@ unzip downloads/deeplab_predictions_cocostuff_val2017.zip -d models/deeplab/coco
 python models/deeplab/evaluate_performance.py
 ```
 
+The table below summarizes the files used in these instructions:
+
+Filename | Description | Size
+--- | --- | ---
+[deeplabv2_vgg16_init.caffemodel](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplabv2_vgg16_init.caffemodel) | Deeplab VGG-16 pretrained model [(link)](https://bitbucket.org/aquariusjay/deeplab-public-ver2) | 152 MB
+[deeplab_cocostuff_trainedmodel.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplab_cocostuff_trainedmodel.zip) | Deeplab VGG-16 trained on COCO_Stuff | 286 MB
+[deeplab_predictions_cocostuff_val2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplab_predictions_cocostuff_val2017.zip) | Deeplab VGG-16 predictions on COCO-Stuff | 54 MB
+
+Note that the Deeplab predictions need to be rotated and cropped, as shown in [this script](https://github.com/nightrome/cocostuff164k/blob/master/models/deeplab/evaluate_performance.py).
+
 ## Annotation Tool
 For the Matlab annotation tool used to annotate the initial 10K images, please refer to [this repository](https://github.com/nightrome/cocostuff10k#annotation-tool).
 
