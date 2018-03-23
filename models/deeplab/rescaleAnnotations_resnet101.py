@@ -5,7 +5,7 @@ import scipy.misc
 
 # Specify folders
 tgt_size = 513
-subset = 'stuff_val2017_pixelmaps'
+subset = 'val2017'
 image_src = os.path.join('cocostuff/data/annotations', subset)
 image_tgt = image_src + str(tgt_size)
 
