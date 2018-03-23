@@ -11,16 +11,16 @@ layer {
   }
   transform_param {
     mirror: false
-    crop_size: 513
-    mean_value: 104.008
-    mean_value: 116.669
-    mean_value: 122.675
+    crop_size: 513 # 353 # TODO: set back to 513
+    mean_value: 104.0 # adapted to COCO
+    mean_value: 114.1
+    mean_value: 120.1
   }
   image_data_param {
     root_folder: "${DATA_ROOT}"
     source: "${EXP}/list/${TEST_SET}.txt"
     batch_size: 1
-    label_type: PIXEL
+    label_type: NONE
   }
 }
 
@@ -21812,30 +21812,28 @@ layer {
   name: "fc1_mat"
   type: "MatWrite"
   bottom: "fc1_interp_argmax"
-#  bottom: "fc1_interp"
   include {
     phase: TEST
   }
   mat_write_param {
-    prefix: "${FEATURE_DIR}/${TEST_SET}/fc1/"
+    prefix: "${FEATURE_DIR}/${MODEL_NAME}/${TEST_SET}/fc8/"
     source: "${EXP}/list/${TEST_SET}_id.txt"
     strip: 0
     period: 1
   }
 }
 
-#TODO
-layer {
-  name: "accuracy"
-  type: "SegAccuracy"
-  bottom: "fc1_interp"
-  bottom: "label"
-  top: "fc1_accuracy"
-  seg_accuracy_param {
-    ignore_label: 255
-    reset: false
-  }
-}
+#layer {
+#  name: "accuracy"
+#  type: "SegAccuracy"
+#  bottom: "fc1_interp"
+#  bottom: "label"
+#  top: "fc1_accuracy"
+#  seg_accuracy_param {
+#    ignore_label: 255
+#    reset: false
+#  }
+#}
 
 layer {
   name: "silence"

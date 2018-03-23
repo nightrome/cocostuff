@@ -11,16 +11,16 @@ layer {
   }
   transform_param {
     mirror: false
-    crop_size: 513
-    mean_value: 104.008
-    mean_value: 116.669
-    mean_value: 122.675
+    crop_size: 513 # 353 # TODO: set back to 513
+    mean_value: 104.0 # adapted to COCO
+    mean_value: 114.1
+    mean_value: 120.1
   }
   image_data_param {
     root_folder: "cocostuff/data"
     source: "cocostuff/list/val513.txt"
     batch_size: 1
-    label_type: PIXEL
+    label_type: NONE
   }
 }
 
@@ -21483,7 +21483,7 @@ layer {
     name: "fc1_cocostuff_c0_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     pad: 6
     dilation: 6
@@ -21502,7 +21502,7 @@ layer {
     name: "fc1_cocostuff_c1_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 12
     pad: 12
@@ -21521,7 +21521,7 @@ layer {
     name: "fc1_cocostuff_c2_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 18
     pad: 18
@@ -21540,7 +21540,7 @@ layer {
     name: "fc1_cocostuff_c3_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 24
     pad: 24
@@ -21576,7 +21576,7 @@ layer {
     name: "fc1_cocostuff_c0_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     pad: 6
     dilation: 6
@@ -21595,7 +21595,7 @@ layer {
     name: "fc1_cocostuff_c1_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 12
     pad: 12
@@ -21613,7 +21613,7 @@ layer {
     name: "fc1_cocostuff_c2_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 18
     pad: 18
@@ -21631,7 +21631,7 @@ layer {
     name: "fc1_cocostuff_c3_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 24
     pad: 24
@@ -21668,7 +21668,7 @@ layer {
     name: "fc1_cocostuff_c0_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     pad: 6
     dilation: 6
@@ -21687,7 +21687,7 @@ layer {
     name: "fc1_cocostuff_c1_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 12
     pad: 12
@@ -21706,7 +21706,7 @@ layer {
     name: "fc1_cocostuff_c2_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 18
     pad: 18
@@ -21725,7 +21725,7 @@ layer {
     name: "fc1_cocostuff_c3_b"
   }
   convolution_param {
-    num_output: 182
+    num_output: 183
     kernel_size: 3
     dilation: 24
     pad: 24
@@ -21812,30 +21812,28 @@ layer {
   name: "fc1_mat"
   type: "MatWrite"
   bottom: "fc1_interp_argmax"
-#  bottom: "fc1_interp"
   include {
     phase: TEST
   }
   mat_write_param {
-    prefix: "cocostuff/features/deeplabv2_resnet101/val513/fc1/"
+    prefix: "cocostuff/features/deeplabv2_resnet101/model120kimages/val513/fc8/"
     source: "cocostuff/list/val513_id.txt"
     strip: 0
     period: 1
   }
 }
 
-#TODO
-layer {
-  name: "accuracy"
-  type: "SegAccuracy"
-  bottom: "fc1_interp"
-  bottom: "label"
-  top: "fc1_accuracy"
-  seg_accuracy_param {
-    ignore_label: 255
-    reset: false
-  }
-}
+#layer {
+#  name: "accuracy"
+#  type: "SegAccuracy"
+#  bottom: "fc1_interp"
+#  bottom: "label"
+#  top: "fc1_accuracy"
+#  seg_accuracy_param {
+#    ignore_label: 255
+#    reset: false
+#  }
+#}
 
 layer {
   name: "silence"

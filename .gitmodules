@@ -1,0 +1,3 @@
+[submodule "models/deeplab/deeplab-v2"]
+	path = models/deeplab/deeplab-v2
+	url = https://github.com/xmyqsh/deeplab-v2.git

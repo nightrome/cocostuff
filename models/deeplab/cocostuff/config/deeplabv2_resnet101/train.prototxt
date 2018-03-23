@@ -12,9 +12,9 @@ layer {
   transform_param {
     mirror: true
     crop_size: 321
-    mean_value: 104.008
-    mean_value: 116.669
-    mean_value: 122.675
+    mean_value: 104.0 # Adapted to COCO
+    mean_value: 114.1
+    mean_value: 120.1
     scale_factors: 0.5
     scale_factors: 0.75
     scale_factors: 1
@@ -23,7 +23,7 @@ layer {
   }
   image_data_param {
     root_folder: "${DATA_ROOT}"
-    source: "${EXP}/list/${TRAIN_SET}.txt"
+    source: "${EXP}/list/${TRAIN_SET}-${MODEL_NAME}.txt"
     batch_size: 1
     shuffle: true
     label_type: PIXEL
