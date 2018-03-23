@@ -10,7 +10,7 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - [Downloads](#downloads)
 - [Setup](#setup)
 - [Results](#results)
-- [Details](#details)
+- [Labels](#labels)
 - [Semantic Segmentation Models](#semantic-segmentation-models)
 - [Annotation Tool](#annotation-tool)
 - [Misc](#misc)
@@ -24,9 +24,9 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - 5 captions per image from COCO [2]
 
 ## Versions of COCO-Stuff
-- [COCO-Stuff 164K dataset](https://github.com/nightrome/cocostuff164k): The final version of COCO-Stuff, that is presented on this page. It includes all 164K images from COCO 2017 (train 118K, val 5K, test-dev 20K, test-challenge 20K). It covers 172 classes: 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This dataset will form the basis of all upcoming challenges.
-- [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#stuff-challenge2017): A semantic segmentation challenge on 55K images (train 40K, val 5K, test-dev 5K, test-challenge 5K) of COCO. To focus on stuff, we merged all 80 thing classes into a single class 'other'. The results of the challenge were released at the [Joint COCO and Places Recognition Workshop at ICCV 2017](https://places-coco2017.github.io/).
-- [COCO-Stuff 10K dataset](https://github.com/nightrome/cocostuff10k): Our first dataset, annotated by 10 in-house annotators at the University of Edinburgh. It includes 10K images from the training set of COCO. We provide a 9K/1K (train/val) split to make results comparable. The dataset includes 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This was initially presented as 91 thing classes, but is now changed to 80 thing classes, as 11 classes in COCO are missing or removed. This dataset is a subset of all later releases.
+- [COCO-Stuff 164K dataset](https://github.com/nightrome/cocostuff): The final version of COCO-Stuff, that is presented on this page. It includes all 164K images from COCO 2017 (train 118K, val 5K, test-dev 20K, test-challenge 20K). It covers 172 classes: 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This dataset will form the basis of all upcoming challenges.
+- [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#stuff-challenge2017): A semantic segmentation challenge on 55K images (train 40K, val 5K, test-dev 5K, test-challenge 5K) of COCO. To focus on stuff, we merged all 80 thing classes into a single class 'other'. The results of the challenge were presented at the [Joint COCO and Places Recognition Workshop at ICCV 2017](https://places-coco2017.github.io/).
+- [COCO-Stuff 10K dataset](https://github.com/nightrome/cocostuff10k): Our first dataset, annotated by 10 in-house annotators at the University of Edinburgh. It includes 10K images from the training set of COCO. We provide a 9K/1K (train/val) split to make results comparable. The dataset includes 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This was initially presented as 91 thing classes, but is now changed to 80 thing classes, as 11 classes [do not have any segmentation annotations](#labels) in COCO. This dataset is a subset of all other releases.
 
 ## Downloads
 Filename | Description | Size
@@ -36,8 +36,8 @@ Filename | Description | Size
 [stuffthingmaps_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip) | Stuff+thing PNG-style annotations on COCO 2017 trainval | 659 MB
 [stuff_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_trainval2017.zip) | Stuff-only COCO-style annotations on COCO 2017 trainval | 543 MB
 [annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only COCO-style annotations on COCO 2017 trainval | 241 MB
-[labels.md](https://github.com/nightrome/cocostuff164k/blob/master/labels.md) | Indices, names, previews and descriptions of the classes in COCO-Stuff | <10 KB
-[README.md](https://github.com/nightrome/cocostuff164k/blob/master/README.md) | This readme | <10 KB
+[labels.md](https://github.com/nightrome/cocostuff/blob/master/labels.md) | Indices, names, previews and descriptions of the classes in COCO-Stuff | <10 KB
+[README.md](https://github.com/nightrome/cocostuff/blob/master/README.md) | This readme | <10 KB
 
 To use this dataset you will need to download the images (18+1 GB!) and annotations of the trainval sets.
 We sugggest using the stuffthingmaps, as they provide all stuff and thing labels in a single .png file per image.
@@ -51,8 +51,8 @@ The instructions are for Ubuntu and require git, wget and unzip.
 On other operating systems the commands may differ:
 ```
 # Get this repo
-git clone https://github.com/nightrome/cocostuff164k.git
-cd cocostuff164k
+git clone https://github.com/nightrome/cocostuff.git
+cd cocostuff
 
 # Download everything
 wget --directory-prefix=downloads http://images.cocodataset.org/zips/train2017.zip
@@ -68,6 +68,9 @@ unzip downloads/stuffthingmaps_trainval2017.zip -d dataset/annotations/
 ```
 
 ## Results
+Below we present results on different releases of COCO-Stuff.
+If you would like to see your  results here, please contact the [first author](mailto:holger-at-it-caesar.com).
+
 ### Results on the val set of COCO-Stuff 164K:
 Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
@@ -96,9 +99,9 @@ OHE + DC + FCN+ [5]   | [5]   | **45.8%**               | **66.6%**       | 34.3
 Deeplab ResNet (no CRF) [4]   | -   | 45.5%             | 65.1%           | 34.4%    | 50.4%
 W2V + DC + FCN+ [5]   | [5]   | 45.1%                   | 66.1%           | **34.7%**| 51.0%
 
-## Details
+## Labels
 ### Label Names & Indices
-To be compatible with COCO, COCO-Stuff has 91 thing classes (1-91), 91 stuff classes (92-182) and 1 class "unlabeled" (0). Note that 11 of the thing classes of COCO do not have any segmentation annotations (blender, desk, door, eye glasses, hair brush, hat, mirror, plate, shoe, street sign, window). The classes desk, door, mirror and window could be either stuff or things and therefore occur in both COCO and COCO-Stuff. To avoid confusion we add the suffix "-stuff" or "-other" to those classes in COCO-Stuff. The full list of classes and their descriptions can be found [here](https://github.com/nightrome/cocostuff164k/blob/master/labels.md).
+To be compatible with COCO, COCO-Stuff has 91 thing classes (1-91), 91 stuff classes (92-182) and 1 class "unlabeled" (0). Note that 11 of the thing classes of COCO do not have any segmentation annotations (blender, desk, door, eye glasses, hair brush, hat, mirror, plate, shoe, street sign, window). The classes desk, door, mirror and window could be either stuff or things and therefore occur in both COCO and COCO-Stuff. To avoid confusion we add the suffix "-stuff" or "-other" to those classes in COCO-Stuff. The full list of classes and their descriptions can be found [here](https://github.com/nightrome/cocostuff/blob/master/labels.md).
 
 ### Label Hierarchy
 This figure shows the label hierarchy of COCO-Stuff including all stuff and thing classes:
@@ -144,7 +147,7 @@ Filename | Description | Size
 [deeplab_cocostuff_trainedmodel.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplab_cocostuff_trainedmodel.zip) | Deeplab VGG-16 trained on COCO_Stuff | 286 MB
 [deeplab_predictions_cocostuff_val2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/deeplab_predictions_cocostuff_val2017.zip) | Deeplab VGG-16 predictions on COCO-Stuff | 54 MB
 
-Note that the Deeplab predictions need to be rotated and cropped, as shown in [this script](https://github.com/nightrome/cocostuff164k/blob/master/models/deeplab/evaluate_performance.py).
+Note that the Deeplab predictions need to be rotated and cropped, as shown in [this script](https://github.com/nightrome/cocostuff/blob/master/models/deeplab/evaluate_performance.py).
 
 ## Annotation Tool
 For the Matlab annotation tool used to annotate the initial 10K images, please refer to [this repository](https://github.com/nightrome/cocostuff10k#annotation-tool).
