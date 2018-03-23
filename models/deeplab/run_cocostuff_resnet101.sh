@@ -9,7 +9,7 @@ EXP=cocostuff
 MODEL_NAME=model120kimages
 
 if [ "${EXP}" = "cocostuff" ]; then
-    NUM_LABELS=182 # formerly 182
+    NUM_LABELS=182
     DATA_ROOT=${EXP}/data
 else
     NUM_LABELS=0
@@ -25,22 +25,22 @@ if [ "${EPOCH}" -ne "-1" ]; then
   echo "Continuing from snapsnot ${SNAPSHOT}..."
 fi
 
-DEV_ID=2
+DEV_ID=0
 
 #####
 
 ## Create dirs
 
 CONFIG_DIR=${EXP}/config/${NET_ID}
-MODEL_DIR=${EXP}/model/${NET_ID}
+MODEL_DIR=${EXP}/model/${NET_ID}/${MODEL_NAME}
 mkdir -p ${MODEL_DIR}
-LOG_DIR=${EXP}/log/${NET_ID}
+LOG_DIR=${EXP}/log/${NET_ID}/${MODEL_NAME}
 mkdir -p ${LOG_DIR}
 export GLOG_log_dir=${LOG_DIR}
 
 ## Run
 RUN_TRAIN=1
-RUN_TEST=0
+RUN_TEST=1
 
 ## Training
 if [ ${RUN_TRAIN} -eq 1 ]; then
@@ -50,7 +50,7 @@ if [ ${RUN_TRAIN} -eq 1 ]; then
     #
     MODEL=${EXP}/model/${NET_ID}/deeplabv2_resnet101_init.caffemodel
     #
-    echo Training net ${EXP}/${NET_ID}
+    echo Training net ${EXP}/${NET_ID}/${MODEL_NAME}
     for pname in train solver; do
 	sed "$(eval echo $(cat sub.sed))" \
 	${CONFIG_DIR}/${pname}.prototxt > ${CONFIG_DIR}/${pname}_${TRAIN_SET}.prototxt
@@ -72,22 +72,22 @@ fi
 if [ ${RUN_TEST} -eq 1 ]; then
     #
     for TEST_SET in val513; do
-				TEST_ITER=`cat ${EXP}/list/${TEST_SET}.txt | wc -l`
-				MODEL=${EXP}/model/${NET_ID}/test.caffemodel
-				if [ ! -f ${MODEL} ]; then
-						MODEL=`ls -t ${EXP}/model/${NET_ID}/train_iter_*.caffemodel | head -n 1`
-				fi
-				#
-				echo Testing net ${EXP}/${NET_ID}
-				FEATURE_DIR=${EXP}/features/${NET_ID}
-				mkdir -p ${FEATURE_DIR}/${TEST_SET}/fc8
-				sed "$(eval echo $(cat sub.sed))" \
-						${CONFIG_DIR}/test.prototxt > ${CONFIG_DIR}/test_${TEST_SET}.prototxt
-				CMD="${CAFFE_BIN} test \
-             			--model=${CONFIG_DIR}/test_${TEST_SET}.prototxt \
-             			--weights=${MODEL} \
-                                --iterations=${TEST_ITER} \
-                                --gpu=${DEV_ID}"
-				echo Running ${CMD} && ${CMD}
+	TEST_ITER=`cat ${EXP}/list/${TEST_SET}.txt | wc -l`
+	MODEL=${EXP}/model/${NET_ID}/${MODEL_NAME}/test.caffemodel
+	if [ ! -f ${MODEL} ]; then
+		MODEL=`ls -t ${EXP}/model/${NET_ID}/${MODEL_NAME}/train_iter_*.caffemodel | head -n 1`
+	fi
+	#
+	echo Testing net ${EXP}/${NET_ID}/${MODEL_NAME}
+	FEATURE_DIR=${EXP}/features/${NET_ID}/${MODEL_NAME}
+	mkdir -p ${FEATURE_DIR}/${TEST_SET}/fc8
+	sed "$(eval echo $(cat sub.sed))" \
+		${CONFIG_DIR}/test.prototxt > ${CONFIG_DIR}/test_${TEST_SET}.prototxt
+	CMD="${CAFFE_BIN} test \
+             	--model=${CONFIG_DIR}/test_${TEST_SET}.prototxt \
+             	--weights=${MODEL} \
+                --gpu=${DEV_ID} \
+                --iterations=${TEST_ITER}"
+	echo Running ${CMD} && ${CMD}
     done
 fi
