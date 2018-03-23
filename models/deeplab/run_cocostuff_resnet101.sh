@@ -73,21 +73,21 @@ if [ ${RUN_TEST} -eq 1 ]; then
     #
     for TEST_SET in val513; do
 	TEST_ITER=`cat ${EXP}/list/${TEST_SET}.txt | wc -l`
-	MODEL=${EXP}/model/${NET_ID}/test.caffemodel
+	MODEL=${EXP}/model/${NET_ID}/${MODEL_NAME}/test.caffemodel
 	if [ ! -f ${MODEL} ]; then
-		MODEL=`ls -t ${EXP}/model/${NET_ID}/train_iter_*.caffemodel | head -n 1`
+		MODEL=`ls -t ${EXP}/model/${NET_ID}/${MODEL_NAME}/train_iter_*.caffemodel | head -n 1`
 	fi
 	#
-	echo Testing net ${EXP}/${NET_ID}
-	FEATURE_DIR=${EXP}/features/${NET_ID}
+	echo Testing net ${EXP}/${NET_ID}/${MODEL_NAME}
+	FEATURE_DIR=${EXP}/features/${NET_ID}/${MODEL_NAME}
 	mkdir -p ${FEATURE_DIR}/${TEST_SET}/fc8
 	sed "$(eval echo $(cat sub.sed))" \
 		${CONFIG_DIR}/test.prototxt > ${CONFIG_DIR}/test_${TEST_SET}.prototxt
 	CMD="${CAFFE_BIN} test \
              	--model=${CONFIG_DIR}/test_${TEST_SET}.prototxt \
              	--weights=${MODEL} \
-                --iterations=${TEST_ITER} \
-                --gpu=${DEV_ID}"
+                --gpu=${DEV_ID} \
+                --iterations=${TEST_ITER}"
 	echo Running ${CMD} && ${CMD}
     done
 fi
