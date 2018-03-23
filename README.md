@@ -109,7 +109,8 @@ This figure shows the label hierarchy of COCO-Stuff including all stuff and thin
 
 ## Semantic Segmentation Models
 Before using the semantic segmentation model, please [setup the dataset](#setup).
-The commands below download and install Deeplab (incl. Caffe), download or train the model and predictions and evaluate the performance. The results should be the same as in [this table](#results):
+The commands below download and install Deeplab (incl. Caffe), download or train the model and predictions and evaluate the performance. The results should be the same as in [the table](#results).
+Due to several issues, we do not provide the Deeplab ResNet101 model, but some code for it can be found in [this folder](https://github.com/nightrome/cocostuff/tree/master/models/deeplab).
 ```
 # Get and install Deeplab (you may need to change settings)
 # We use a special version of Deeplab v2 that supports CuDNN v5, but others may work as well.
