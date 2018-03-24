@@ -96,9 +96,14 @@ Deeplab VGG-16 (no CRF) [4] | [1b] | 38.1%              | 57.8%           | 26.9
 FCN-8s [3]            | [6]   | 38.5%                   | 60.4%           | 27.2%    | -
 SCA VGG-16 [7]        | [7]   | 42.5%                   | 61.6%           | 29.1%    | -
 DAG-RNN + CRF [6]     | [6]   | 42.8%                   | 63.0%           | 31.2%    | -
-OHE + DC + FCN+ [5]   | [5]   | **45.8%**               | **66.6%**       | 34.3%    | **51.2%**
+DC + FCN+ [5]         | [5]   | 44.6%                   | 65.5%           | 33.6%    | **50.6%**
 Deeplab ResNet (no CRF) [4]   | -   | 45.5%             | 65.1%           | 34.4%    | 50.4%
-W2V + DC + FCN+ [5]   | [5]   | 45.1%                   | 66.1%           | **34.7%**| 51.0%
+DSSPN ResNet finetune   [9] | [9] | **48.1%**           | **69.4%**           | **37.3%**| -
+OHE + DC + FCN+&ast; [5]  | [5]   | 45.8%               | 66.6%           | 34.3%    | **51.2%**
+W2V + DC + FCN+&ast; [5]  | [5]   | 45.1%               | 66.1%           | 34.7%    | 51.0%
+DSSPN ResNet universal&ast; [9] | [9] | **50.3%**       | **70.7%**       | **38.9%**| -
+
+&ast; Results not comparable as they use external data
 
 ## Labels
 ### Label Names & Indices
@@ -191,6 +196,10 @@ In *arXiv preprint arXiv:1711.08278*, 2017.<br />
 - [8] [In-Place Activated BatchNorm for Memory-Optimized Training of DNNs](https://arxiv.org/abs/1712.02616)<br />
 S. R. Bulò, L. Porzi, P. Kontschieder <br />
 In *arXiv preprint arXiv:1712.02616*, 2017.<br />
+
+- [9] [Dynamic-structured Semantic Propagation Network](https://arxiv.org/abs/1803.06067)<br />
+X. Liang, H. Zhou, E. Xing<br />
+In *Computer Vision and Pattern Recognition* (CVPR), 2018.<br />
 
 ### Licensing
 COCO-Stuff is a derivative work of the COCO dataset. The authors of COCO do not in any form endorse this work. Different licenses apply:
