@@ -99,9 +99,9 @@ DAG-RNN + CRF [6]     | [6]   | 42.8%                   | 63.0%           | 31.2
 DC + FCN+ [5]         | [5]   | 44.6%                   | 65.5%           | 33.6%    | **50.6%**
 Deeplab ResNet (no CRF) [4]   | -   | 45.5%             | 65.1%           | 34.4%    | 50.4%
 DSSPN ResNet finetune   [9] | [9] | **48.1%**           | **69.4%**           | **37.3%**| -
-OHE + DC + FCN+&ast; [5]  | [5]   | 45.8%               | 66.6%           | 34.3%    | **51.2%**
-W2V + DC + FCN+&ast; [5]  | [5]   | 45.1%               | 66.1%           | 34.7%    | 51.0%
-DSSPN ResNet universal&ast; [9] | [9] | **50.3%**       | **70.7%**       | **38.9%**| -
+&ast; OHE + DC + FCN+ [5]  | [5]   | 45.8%               | 66.6%           | 34.3%    | **51.2%**
+&ast; W2V + DC + FCN+ [5]  | [5]   | 45.1%               | 66.1%           | 34.7%    | 51.0%
+&ast; DSSPN ResNet universal [9] | [9] | **50.3%**       | **70.7%**       | **38.9%**| -
 
 &ast; Results not comparable as they use external data
 
