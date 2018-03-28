@@ -1,11 +1,12 @@
-# The final COCO-Stuff dataset
+# The COCO-Stuff dataset
 [Holger Caesar](http://www.it-caesar.com), [Jasper Uijlings](http://homepages.inf.ed.ac.uk/juijling), [Vittorio Ferrari](http://calvin.inf.ed.ac.uk/members/vittoferrari)
 
 <img src="http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/cocostuff-examples.png" alt="COCO-Stuff example annotations" width="100%">
-Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments the popular COCO [2] dataset with pixel-level stuff annotations. These annotations can be used for scene understanding tasks like semantic segmentation, object detection and image captioning.
+Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments all 164K images of the popular COCO [2] dataset with pixel-level stuff annotations. These annotations can be used for scene understanding tasks like semantic segmentation, object detection and image captioning.
 
 ## Overview
 - [Highlights](#highlights)
+- [Research Paper](#research-paper)
 - [Versions of COCO-Stuff](#versions-of-coco-stuff)
 - [Downloads](#downloads)
 - [Setup](#setup)
@@ -23,8 +24,15 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - Complex spatial context between stuff and things
 - 5 captions per image from COCO [2]
 
+## Research Paper
+
+[COCO-Stuff: Thing and Stuff Classes in Context](https://arxiv.org/abs/1612.03716)<br />
+H. Caesar, J. Uijlings, V. Ferrari,<br />
+In *Computer Vision and Pattern Recognition* (CVPR), 2018.<br />
+[[paper](https://arxiv.org/abs/1612.03716)][[bibtex](https://github.com/nightrome/cocostuff/blob/master/cocostuff.bib)]
+
 ## Versions of COCO-Stuff
-- [COCO-Stuff 164K dataset](https://github.com/nightrome/cocostuff): The final version of COCO-Stuff, that is presented on this page. It includes all 164K images from COCO 2017 (train 118K, val 5K, test-dev 20K, test-challenge 20K). It covers 172 classes: 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This dataset will form the basis of all upcoming challenges.
+- [COCO-Stuff dataset](https://github.com/nightrome/cocostuff): The final version of COCO-Stuff, that is presented on this page. It includes all 164K images from COCO 2017 (train 118K, val 5K, test-dev 20K, test-challenge 20K). It covers 172 classes: 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This dataset will form the basis of all upcoming challenges.
 - [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#stuff-challenge2017): A semantic segmentation challenge on 55K images (train 40K, val 5K, test-dev 5K, test-challenge 5K) of COCO. To focus on stuff, we merged all 80 thing classes into a single class 'other'. The results of the challenge were presented at the [Joint COCO and Places Recognition Workshop at ICCV 2017](https://places-coco2017.github.io/).
 - [COCO-Stuff 10K dataset](https://github.com/nightrome/cocostuff10k): Our first dataset, annotated by 10 in-house annotators at the University of Edinburgh. It includes 10K images from the training set of COCO. We provide a 9K/1K (train/val) split to make results comparable. The dataset includes 80 thing classes, 91 stuff classes and 1 class 'unlabeled'. This was initially presented as 91 thing classes, but is now changed to 80 thing classes, as 11 classes [do not have any segmentation annotations](#labels) in COCO. This dataset is a subset of all other releases.
 
@@ -72,12 +80,12 @@ unzip downloads/stuffthingmaps_trainval2017.zip -d dataset/annotations/
 Below we present results on different releases of COCO-Stuff.
 If you would like to see your  results here, please contact the [first author](mailto:holger-at-it-caesar.com).
 
-### Results on the val set of COCO-Stuff 164K:
+### Results on the val set of COCO-Stuff:
 Method                | Source| Class accuracy  | Pixel accuracy | Mean IOU | FW IOU
 ---                   | ---   | ---                     | ---             | ---      | ---
 Deeplab VGG-16 (no CRF) [4] | [1] | 45.1%               | 63.6%           | 33.2%     | 47.6%
 
-Note that the results between the 10K dataset and the 164K dataset are not direclty comparable, as different train and val images are used. Furthermore, on the 164K dataset we train Deeplab for 100K iterations [1], compared to 20K iterations on the 10K dataset [1b].
+Note that the results between the 10K dataset and the full dataset are not direclty comparable, as different train and val images are used. Furthermore, on the full dataset we train Deeplab for 100K iterations [1], compared to 20K iterations on the 10K dataset [1b].
 
 ### Results on the val set of the COCO 2017 Stuff Segmentation Challenge:
 We show results on the val set of the challenge.
