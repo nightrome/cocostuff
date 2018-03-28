@@ -6,7 +6,7 @@ Furthermore, 11 classes have been removed from COCO and therefore lack a preview
 
 Note that despite our best efforts to make labels unambiguous, crowd-sourced annotations are never free of errors.
 In particular, the label 'clothes' is often assigned to incompletely annotated persons (which it should not).
-Furthermore, the difference between 'cupboard' and 'cabinet' and 'fog' and 'sky-clouds' is not always clear from the annotations.
+Furthermore, the difference between 'cupboard' and 'cabinet', 'fog' and 'sky-clouds' and 'cage' and 'fence' is not always clear from the annotations.
 
 Id	|	Label name	|	Preview	|	Description
 ---	|	---	|	---	|	---
@@ -109,7 +109,7 @@ Id	|	Label name	|	Preview	|	Description
 96	|	building-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-96-building-other.png)	|	Any other type of building or structures.
 97	|	bush	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-97-bush.png)	|	A woody plant distinguished from a tree by its multiple stems and lower height (incl. hedge, scrub, excl. leaves, branch).
 98	|	cabinet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-98-cabinet.png)	|	A storage closet, often hanging on the wall (excl. counter, cupboard).
-99	|	cage	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-99-cage.png)	|	An enclosure made of bars, often seen in zoos and stadiums (excl. fence, net).
+99	|	cage	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-99-cage.png)	|	An enclosure made of bars, often seen in zoos (excl. fence, net).
 100	|	cardboard	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-100-cardboard.png)	|	A wood-based material resembling heavy paper, used in the manufacture of boxes, cartons and signs.
 101	|	carpet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-101-carpet.png)	|	A fabric used as a floor covering (excl. rug).
 102	|	ceiling-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-102-ceiling-other.png)	|	Other types of ceilings (excl. tiled ceilings, incl. industrial ceilings, painted ceilings).
@@ -137,7 +137,7 @@ Id	|	Label name	|	Preview	|	Description
 124	|	grass	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-124-grass.png)	|	Vegetation consisting of typically short plants with long, narrow leaves (excl. straw, incl. lawn, pasture).
 125	|	gravel	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-125-gravel.png)	|	A loose aggregation of small water-worn or pounded stones (excl. bigger stones, dirt paths).
 126	|	ground-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-126-ground-other.png)	|	Any other type of ground found outside a building.
-127	|	hill	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-127-hill.png)	|	A naturally raised area of land, not as high or a mountain, viewed at a distance and may be covered in trees, snow or grass.
+127	|	hill	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-127-hill.png)	|	A naturally raised area of land, not as high as a mountain, viewed at a distance and may be covered in trees, snow or grass.
 128	|	house	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-128-house.png)	|	A smaller size building for human habitation (excl. skyscraper).
 129	|	leaves	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-129-leaves.png)	|	A structure of a higher plant, typically green and blade-like, that is attached to a stem or stalk (excl. bush, branch, tree).
 130	|	light	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-130-light.png)	|	A source of illumination, especially a lamp (excl. sunlight, incl. ceiling lights).
