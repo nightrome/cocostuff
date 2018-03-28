@@ -216,7 +216,7 @@ COCO-Stuff is a derivative work of the COCO dataset. The authors of COCO do not 
 - COCO-Stuff annotations & code: [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
 ### Acknowledgements
-This work is supported by the ERC Starting Grant VisCul. The annotation work was done by the crowd-sourcing startup Mighty AI and we gratefully acknowledge support and funding from Mighty AI and the Common Visual Data Foundation.
+This work is supported by the ERC Starting Grant VisCul. The annotations were done by the crowdsourcing startup Mighty AI, and financed by Mighty AI and the Common Visual Data Foundation.
 
 ### Contact
 If you have any questions regarding this dataset, please contact us at holger-at-it-caesar.com.
