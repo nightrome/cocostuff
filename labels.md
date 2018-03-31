@@ -107,7 +107,7 @@ Id	|	Label name	|	Preview	|	Description
 94	|	branch	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-94-branch.png)	|	The woody part of a tree or bush, arising from the trunk and usually dividing.
 95	|	bridge	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-95-bridge.png)	|	A manmade construction that spans a divide (incl. train bridge, river bridge).
 96	|	building-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-96-building-other.png)	|	Any other type of building or structures.
-97	|	bush	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-97-bush.png)	|	A woody plant distinguished from a tree by its multiple stems and lower height (incl. hedge, scrub, excl. leaves, branch).
+97	|	bush	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-97-bush.png)	|	A woody plant distinguished from a tree by its multiple stems and lower height (incl. hedge, scrub).
 98	|	cabinet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-98-cabinet.png)	|	A storage closet, often hanging on the wall.
 99	|	cage	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-99-cage.png)	|	An enclosure made of bars, often seen in zoos.
 100	|	cardboard	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-100-cardboard.png)	|	A wood-based material resembling heavy paper, used in the manufacture of boxes, cartons and signs.
