@@ -103,94 +103,93 @@ Id	|	Label name	|	Preview	|	Description
 90	|	toothbrush	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-90-toothbrush.png)	|	
 91	|	hair brush	|		|	Removed from COCO.
 92	|	banner	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-92-banner.png)	|	Any large sign, especially if constructed of soft material or fabric, often seen in stadiums and advertising.
-93	|	blanket	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-93-blanket.png)	|	A loosely woven fabric, used for warmth while sleeping (excl. the pillow).
-94	|	branch	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-94-branch.png)	|	The woody part of a tree or bush, arising from the trunk and usually dividing (excl. the leaves).
+93	|	blanket	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-93-blanket.png)	|	A loosely woven fabric, used for warmth while sleeping.
+94	|	branch	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-94-branch.png)	|	The woody part of a tree or bush, arising from the trunk and usually dividing.
 95	|	bridge	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-95-bridge.png)	|	A manmade construction that spans a divide (incl. train bridge, river bridge).
 96	|	building-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-96-building-other.png)	|	Any other type of building or structures.
 97	|	bush	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-97-bush.png)	|	A woody plant distinguished from a tree by its multiple stems and lower height (incl. hedge, scrub, excl. leaves, branch).
-98	|	cabinet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-98-cabinet.png)	|	A storage closet, often hanging on the wall (excl. counter, cupboard).
-99	|	cage	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-99-cage.png)	|	An enclosure made of bars, often seen in zoos (excl. fence, net).
+98	|	cabinet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-98-cabinet.png)	|	A storage closet, often hanging on the wall.
+99	|	cage	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-99-cage.png)	|	An enclosure made of bars, often seen in zoos.
 100	|	cardboard	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-100-cardboard.png)	|	A wood-based material resembling heavy paper, used in the manufacture of boxes, cartons and signs.
-101	|	carpet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-101-carpet.png)	|	A fabric used as a floor covering (excl. rug).
-102	|	ceiling-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-102-ceiling-other.png)	|	Other types of ceilings (excl. tiled ceilings, incl. industrial ceilings, painted ceilings).
+101	|	carpet	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-101-carpet.png)	|	A fabric used as a floor covering.
+102	|	ceiling-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-102-ceiling-other.png)	|	Other types of ceilings (incl. industrial ceilings, painted ceilings).
 103	|	ceiling-tile	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-103-ceiling-tile.png)	|	A ceiling made of regularly-shaped slabs.
-104	|	cloth	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-104-cloth.png)	|	A piece of cloth used for a particular purpose. (excl. banner, clothes, incl. cleaning cloth).
-105	|	clothes	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-105-clothes.png)	|	Items of clothing or apparel, not currently worn by a person (excl. cloth, person).
-106	|	clouds	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-106-clouds.png)	|	A visible mass of water droplets suspended in the air (excl. clear sky, fog).
-107	|	counter	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-107-counter.png)	|	A surface in the kitchen or bathroom, often built into a wall or above a cabinet, which holds the washbasin or surface to prepare food (excl. cabinet, cupboard).
-108	|	cupboard	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-108-cupboard.png)	|	A piece of furniture used for storing dishware or a wardrobe for clothes, sometimes hanging on the wall (excl. cabinet, counter).
-109	|	curtain	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-109-curtain.png)	|	A piece of cloth covering a window, bed or shower to offer privacy and keep out light (excl. cloth, window blinds).
-110	|	desk-stuff	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-110-desk-stuff.png)	|	A piece of furniture with a flat surface and typically with drawers, at which one can read, write, or do other work (excl. cabinet, counter, replaces desk).
-111	|	dirt	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-111-dirt.png)	|	Soil or earth (excl. mud, playingfield, sand, incl. dirt path).
-112	|	door-stuff	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-112-door-stuff.png)	|	A portal of entry into a building, room or vehicle, consisting of a rigid plane movable on a hinge (excl. the gap between the frame, incl. the frame, replaces door).
-113	|	fence	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-113-fence.png)	|	A thin, human-constructed barrier which separates two pieces of land (excl. cage, net).
-114	|	floor-marble	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-114-floor-marble.png)	|	The supporting surface of a room or outside, made of marble (excl. tiled floor, stone floor).
+104	|	cloth	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-104-cloth.png)	|	A piece of cloth used for a particular purpose. (incl. cleaning cloth).
+105	|	clothes	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-105-clothes.png)	|	Items of clothing or apparel, not currently worn by a person.
+106	|	clouds	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-106-clouds.png)	|	A visible mass of water droplets suspended in the air.
+107	|	counter	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-107-counter.png)	|	A surface in the kitchen or bathroom, often built into a wall or above a cabinet, which holds the washbasin or surface to prepare food.
+108	|	cupboard	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-108-cupboard.png)	|	A piece of furniture used for storing dishware or a wardrobe for clothes, sometimes hanging on the wall.
+109	|	curtain	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-109-curtain.png)	|	A piece of cloth covering a window, bed or shower to offer privacy and keep out light.
+110	|	desk-stuff	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-110-desk-stuff.png)	|	A piece of furniture with a flat surface and typically with drawers, at which one can read, write, or do other work.
+111	|	dirt	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-111-dirt.png)	|	Soil or earth (incl. dirt path).
+112	|	door-stuff	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-112-door-stuff.png)	|	A portal of entry into a building, room or vehicle, consisting of a rigid plane movable on a hinge (incl. the frame, replaces door).
+113	|	fence	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-113-fence.png)	|	A thin, human-constructed barrier which separates two pieces of land.
+114	|	floor-marble	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-114-floor-marble.png)	|	The supporting surface of a room or outside, made of marble.
 115	|	floor-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-115-floor-other.png)	|	Any other type of floor (incl. rubber-based floor).
-116	|	floor-stone	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-116-floor-stone.png)	|	The supporting surface of a room or outside, made of stone (excl. tiled floor, marble floor, incl. brick floor).
-117	|	floor-tile	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-117-floor-tile.png)	|	The supporting surface of a room or outside, made of regularly-shaped slabs (excl. wood floor, brick floor, incl. tiled stone floor, tiled marble floor).
+116	|	floor-stone	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-116-floor-stone.png)	|	The supporting surface of a room or outside, made of stone (incl. brick floor).
+117	|	floor-tile	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-117-floor-tile.png)	|	The supporting surface of a room or outside, made of regularly-shaped slabs (incl. tiled stone floor, tiled marble floor).
 118	|	floor-wood	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-118-floor-wood.png)	|	The supporting surface of a room or outside, made of wood (incl. wooden tiles, parquet, laminate, wooden boards).
-119	|	flower	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-119-flower.png)	|	The seed-bearing part of a plant (incl. the entire flower, excl. bush, grass, leaves, branch).
-120	|	fog	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-120-fog.png)	|	A thick cloud of tiny water droplets suspended in the atmosphere near the earth's surface (excl. clouds, blue sky).
+119	|	flower	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-119-flower.png)	|	The seed-bearing part of a plant (incl. the entire flower).
+120	|	fog	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-120-fog.png)	|	A thick cloud of tiny water droplets suspended in the atmosphere near the earth's surface.
 121	|	food-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-121-food-other.png)	|	Any other type of food.
-122	|	fruit	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-122-fruit.png)	|	The sweet and fleshy product of a tree or other plant (excl. apple, banana, orange).
+122	|	fruit	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-122-fruit.png)	|	The sweet and fleshy product of a tree or other plant.
 123	|	furniture-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-123-furniture-other.png)	|	Any other type of furniture (incl. oven).
-124	|	grass	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-124-grass.png)	|	Vegetation consisting of typically short plants with long, narrow leaves (excl. straw, incl. lawn, pasture).
-125	|	gravel	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-125-gravel.png)	|	A loose aggregation of small water-worn or pounded stones (excl. bigger stones, dirt paths).
+124	|	grass	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-124-grass.png)	|	Vegetation consisting of typically short plants with long, narrow leaves (incl. lawn, pasture).
+125	|	gravel	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-125-gravel.png)	|	A loose aggregation of small water-worn or pounded stones.
 126	|	ground-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-126-ground-other.png)	|	Any other type of ground found outside a building.
 127	|	hill	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-127-hill.png)	|	A naturally raised area of land, not as high as a mountain, viewed at a distance and may be covered in trees, snow or grass.
-128	|	house	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-128-house.png)	|	A smaller size building for human habitation (excl. skyscraper).
-129	|	leaves	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-129-leaves.png)	|	A structure of a higher plant, typically green and blade-like, that is attached to a stem or stalk (excl. bush, branch, tree).
-130	|	light	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-130-light.png)	|	A source of illumination, especially a lamp (excl. sunlight, incl. ceiling lights).
-131	|	mat	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-131-mat.png)	|	A piece of coarse material placed on a floor for people to wipe their feet on (excl. rug, carpet).
-132	|	metal	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-132-metal.png)	|	A raw metal material (excl. things, incl. a pile of metal).
+128	|	house	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-128-house.png)	|	A smaller size building for human habitation.
+129	|	leaves	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-129-leaves.png)	|	A structure of a higher plant, typically green and blade-like, that is attached to a stem or stalk.
+130	|	light	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-130-light.png)	|	A source of illumination, especially a lamp (incl. ceiling lights).
+131	|	mat	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-131-mat.png)	|	A piece of coarse material placed on a floor for people to wipe their feet on.
+132	|	metal	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-132-metal.png)	|	A raw metal material (incl. a pile of metal).
 133	|	mirror-stuff	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-133-mirror-stuff.png)	|	A glass coated surface which reflects a clear image (incl. the frame, replaces mirror).
-134	|	moss	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-134-moss.png)	|	A small flowerless green plant which lacks true roots, growing in in damp habitats (excl. grass).
+134	|	moss	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-134-moss.png)	|	A small flowerless green plant which lacks true roots, growing in in damp habitats.
 135	|	mountain	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-135-mountain.png)	|	A large natural elevation rising abruptly from the surrounding level, viewed at a distance and may be covered in trees, snow or grass.
-136	|	mud	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-136-mud.png)	|	A soft, sticky matter resulting from the mixing of earth and water (excl. dirt, water).
+136	|	mud	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-136-mud.png)	|	A soft, sticky matter resulting from the mixing of earth and water.
 137	|	napkin	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-137-napkin.png)	|	A piece of cloth or paper used at a meal to wipe the fingers or lips.
-138	|	net	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-138-net.png)	|	An open-meshed fabric twisted, knotted, or woven together at regular intervals (excl. cage, fence).
-139	|	paper	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-139-paper.png)	|	A material manufactured in thin sheets from the pulp of wood (excl. napkin, cardboard).
-140	|	pavement	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-140-pavement.png)	|	A typically raised paved path for pedestrians at the side of a road (excl. platform, road, incl. walkway, footway, sidewalk).
-141	|	pillow	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-141-pillow.png)	|	A rectangular cloth bag stuffed with soft materials to support the head (excl. blanket).
+138	|	net	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-138-net.png)	|	An open-meshed fabric twisted, knotted, or woven together at regular intervals.
+139	|	paper	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-139-paper.png)	|	A material manufactured in thin sheets from the pulp of wood.
+140	|	pavement	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-140-pavement.png)	|	A typically raised paved path for pedestrians at the side of a road.
+141	|	pillow	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-141-pillow.png)	|	A rectangular cloth bag stuffed with soft materials to support the head.
 142	|	plant-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-142-plant-other.png)	|	Any other type of plant.
-143	|	plastic	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-143-plastic.png)	|	Raw plastic material (excl. things).
+143	|	plastic	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-143-plastic.png)	|	Raw plastic material.
 144	|	platform	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-144-platform.png)	|	A raised level surface on which people or things can stand (incl. railroad platform).
-145	|	playingfield	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-145-playingfield.png)	|	A ground marked off for various games (incl indoor and outdoor).
-146	|	railing	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-146-railing.png)	|	A fence or barrier made of typically metal rails (excl. cage, fence).
-147	|	railroad	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-147-railroad.png)	|	A track made of steel rails along which trains run (incl. the wooden beams, excl. surrounding gravel).
+145	|	playingfield	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-145-playingfield.png)	|	A ground marked off for various games (incl. indoor and outdoor).
+146	|	railing	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-146-railing.png)	|	A fence or barrier made of typically metal rails.
+147	|	railroad	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-147-railroad.png)	|	A track made of steel rails along which trains run (incl. the wooden beams).
 148	|	river	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-148-river.png)	|	A stream of flowing water.
-149	|	road	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-149-road.png)	|	A paved way leading from one place to another (excl. dirt paths, pavements).
-150	|	rock	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-150-rock.png)	|	The solid mineral material forming part of the surface of the earth (excl. stone, building materials)
+149	|	road	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-149-road.png)	|	A paved way leading from one place to another.
+150	|	rock	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-150-rock.png)	|	The solid mineral material forming part of the surface of the earth.
 151	|	roof	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-151-roof.png)	|	The structure forming the upper covering of a building.
-152	|	rug	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-152-rug.png)	|	A floor covering of thick woven material, typically not extending over the entire floor (excl. carpet, mat).
-153	|	salad	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-153-salad.png)	|	A cold dish of various mixtures of raw or cooked vegetables (excl. vegetables in their entirety, e.g. capsicum).
-154	|	sand	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-154-sand.png)	|	A loose granular substance, typically pale yellowish brown, resulting from erosion (excl. mud, dirt, incl. beach).
-155	|	sea	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-155-sea.png)	|	Expanse of water that covers most of the earth's surface (excl. lake, river, waterdrops).
-156	|	shelf	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-156-shelf.png)	|	An open piece of furniture that provides a surface for the storage or display of objects (excl. closed furniture like cupboard, cabinet).
-157	|	sky-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-157-sky-other.png)	|	Any other type of sky (excl. clouds, incl. blue sky).
+152	|	rug	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-152-rug.png)	|	A floor covering of thick woven material, typically not extending over the entire floor.
+153	|	salad	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-153-salad.png)	|	A cold dish of various mixtures of raw or cooked vegetables.
+154	|	sand	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-154-sand.png)	|	A loose granular substance, typically pale yellowish brown, resulting from erosion (incl. beach).
+155	|	sea	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-155-sea.png)	|	Expanse of water that covers most of the earth's surface.
+156	|	shelf	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-156-shelf.png)	|	An open piece of furniture that provides a surface for the storage or display of objects.
+157	|	sky-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-157-sky-other.png)	|	Any other type of sky (incl. blue sky).
 158	|	skyscraper	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-158-skyscraper.png)	|	A very tall building of many storeys.
-159	|	snow	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-159-snow.png)	|	Atmospheric water vapour frozen into ice crystals, falling or lying on the ground (excl. hills and mountains at a larger distance).
+159	|	snow	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-159-snow.png)	|	Atmospheric water vapour frozen into ice crystals, falling or lying on the ground.
 160	|	solid-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-160-solid-other.png)	|	Any other type of solid material.
 161	|	stairs	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-161-stairs.png)	|	A set of steps leading from one floor to another (incl. stairs inside or outside a building).
-162	|	stone	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-162-stone.png)	|	A piece of stone shaped for a purpose (excl. rock).
-163	|	straw	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-163-straw.png)	|	Dried stalks of grain (excl. grass).
+162	|	stone	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-162-stone.png)	|	A piece of stone shaped for a purpose.
+163	|	straw	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-163-straw.png)	|	Dried stalks of grain.
 164	|	structural-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-164-structural-other.png)	|	Any other type of structural connection (incl. arcs, pillars).
-165	|	table	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-165-table.png)	|	A piece of furniture with a flat top and one or more legs (excl. desk).
+165	|	table	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-165-table.png)	|	A piece of furniture with a flat top and one or more legs.
 166	|	tent	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-166-tent.png)	|	A portable shelter made of cloth.
-167	|	textile-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-167-textile-other.png)	|	Any other type of textile (excl. cloth, clothes, towel, carpet, mat, rug).
+167	|	textile-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-167-textile-other.png)	|	Any other type of textile.
 168	|	towel	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-168-towel.png)	|	A piece of thick absorbent cloth used for drying oneself.
-169	|	tree	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-169-tree.png)	|	A woody plant, typically having a single trunk growing to a considerable height and bearing lateral branches at some distance from the ground (excl. bush).
-170	|	vegetable	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-170-vegetable.png)	|	A part of a plant used as food (excl. thing-like vegetables).
-171	|	wall-brick	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-171-wall-brick.png)	|	A building wall made of bricks of clay (excl. stone wall).
+169	|	tree	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-169-tree.png)	|	A woody plant, typically having a single trunk growing to a considerable height and bearing lateral branches at some distance from the ground.
+170	|	vegetable	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-170-vegetable.png)	|	A part of a plant used as food.
+171	|	wall-brick	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-171-wall-brick.png)	|	A building wall made of bricks of clay.
 172	|	wall-concrete	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-172-wall-concrete.png)	|	A building wall made of concrete.
 173	|	wall-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-173-wall-other.png)	|	Any other type of wall.
-174	|	wall-panel	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-174-wall-panel.png)	|	A panel that is attached to a wall (excl. banner).
-175	|	wall-stone	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-175-wall-stone.png)	|	A building wall made of stone (excl. tiles, bricks or concrete).
+174	|	wall-panel	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-174-wall-panel.png)	|	A panel that is attached to a wall.
+175	|	wall-stone	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-175-wall-stone.png)	|	A building wall made of stone.
 176	|	wall-tile	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-176-wall-tile.png)	|	A building wall made of tiles, such as used in bathrooms and kitchens.
 177	|	wall-wood	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-177-wall-wood.png)	|	A building wall made of wooden material.
-178	|	water-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-178-water-other.png)	|	Any other type of water (excl. river, waterdrops, incl. lake)
+178	|	water-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-178-water-other.png)	|	Any other type of water (incl. lake).
 179	|	waterdrops	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-179-waterdrops.png)	|	Sprinkles or drops of water not connected to a larger body of water.
 180	|	window-blind	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-180-window-blind.png)	|	Blinds and shutters that cover a window.
 181	|	window-other	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-181-window-other.png)	|	Any type of window that must be visible in the image (replaces window).
-182	|	wood	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-182-wood.png)	|	Raw wood materials (excl. tree, wall-wood, incl. logs).
->> 
+182	|	wood	|	[(view)](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/preview/label-182-wood.png)	|	Raw wood materials (incl. logs).
