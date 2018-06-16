@@ -105,11 +105,12 @@ FCN-8s [3]            | [6]   | 38.5%                   | 60.4%           | 27.2
 SCA VGG-16 [7]        | [7]   | 42.5%                   | 61.6%           | 29.1%    | -
 DAG-RNN + CRF [6]     | [6]   | 42.8%                   | 63.0%           | 31.2%    | -
 DC + FCN+ [5]         | [5]   | 44.6%                   | 65.5%           | 33.6%    | **50.6%**
-Deeplab ResNet (no CRF) [4]   | -   | 45.5%             | 65.1%           | 34.4%    | 50.4%
-DSSPN ResNet finetune   [9] | [9] | **48.1%**           | **69.4%**           | **37.3%**| -
-&ast; OHE + DC + FCN+ [5]  | [5]   | 45.8%               | 66.6%           | 34.3%    | **51.2%**
-&ast; W2V + DC + FCN+ [5]  | [5]   | 45.1%               | 66.1%           | 34.7%    | 51.0%
-&ast; DSSPN ResNet universal [9] | [9] | **50.3%**       | **70.7%**       | **38.9%**| -
+Deeplab ResNet (no CRF) [4] | -   | 45.5%               | 65.1%           | 34.4%    | 50.4%
+CCL ResNet-101 [10]   | [10]  | 48.8%                   | 66.3%           | 35.7%    | -
+DSSPN ResNet finetune   [9] | [9] | **48.1%**           | **69.4%**       | **37.3%**| -
+&ast; OHE + DC + FCN+ [5]  | [5]   | 45.8%              | 66.6%           | 34.3%    | **51.2%**
+&ast; W2V + DC + FCN+ [5]  | [5]   | 45.1%              | 66.1%           | 34.7%    | 51.0%
+&ast; DSSPN ResNet universal [9] | [9] | **50.3%**      | **70.7%**       | **38.9%**| -
 
 &ast; Results not comparable as they use external data
 
@@ -207,6 +208,10 @@ In *arXiv preprint arXiv:1712.02616*, 2017.<br />
 
 - [9] [Dynamic-structured Semantic Propagation Network](https://arxiv.org/abs/1803.06067)<br />
 X. Liang, H. Zhou, E. Xing<br />
+In *Computer Vision and Pattern Recognition* (CVPR), 2018.<br />
+
+- [10] [Context Contrasted Feature and Gated Multi-scale Aggregation for Scene Segmentation](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/1276.pdf)<br />
+H. Ding, X. Jiang, B. Shuai, A. Q. Liu, G. Wang<br />
 In *Computer Vision and Pattern Recognition* (CVPR), 2018.<br />
 
 ### Licensing
