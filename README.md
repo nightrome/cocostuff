@@ -122,7 +122,7 @@ To be compatible with COCO, COCO-Stuff has 91 thing classes (1-91), 91 stuff cla
 This figure shows the label hierarchy of COCO-Stuff including all stuff and thing classes:
 <img src="https://github.com/nightrome/cocostuff10k/blob/master/dataset/cocostuff-labelhierarchy.png?raw=true" alt="COCO-Stuff label hierarchy" width="100%">
 
-## Semantic Segmentation Models
+## Semantic Segmentation Models (stuff+things)
 Before using the semantic segmentation model, please [setup the dataset](#setup).
 The commands below download and install Deeplab (incl. Caffe), download or train the model and predictions and evaluate the performance. The results should be the same as in [the table](#results).
 Due to several issues, we do not provide the Deeplab ResNet101 model, but some code for it can be found in [this folder](https://github.com/nightrome/cocostuff/tree/master/models/deeplab).
