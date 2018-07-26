@@ -50,7 +50,7 @@ Filename | Description | Size
 To use this dataset you will need to download the images (18+1 GB!) and annotations of the trainval sets.
 We sugggest using the stuffthingmaps, as they provide all stuff and thing labels in a single .png file per image.
 Note that the .png files are [indexed images](https://en.wikipedia.org/wiki/Indexed_color), which means they store only the label indices and are typically displayed as grayscale images.
-To be compatible with most Caffe-based semantic segmentation methods, thing+stuff labels cover indices 0-171 and 255 indicates the 'unlabeled' or void class.
+To be compatible with most Caffe-based semantic segmentation methods, thing+stuff labels cover indices 0-181 and 255 indicates the 'unlabeled' or void class.
 Alternatively you can download the separate files for stuff and thing annotations in COCO format, which are compatible with the [COCO-Stuff API](https://github.com/nightrome/cocoapi).
 To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
 
