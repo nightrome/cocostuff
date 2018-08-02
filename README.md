@@ -12,7 +12,7 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - [Setup](#setup)
 - [Results](#results)
 - [Labels](#labels)
-- [Semantic Segmentation Models](#semantic-segmentation-models)
+- [Semantic Segmentation Models](#semantic-segmentation-models-stuffthings)
 - [Annotation Tool](#annotation-tool)
 - [Misc](#misc)
 
