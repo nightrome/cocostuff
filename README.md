@@ -123,6 +123,13 @@ This figure shows the label hierarchy of COCO-Stuff including all stuff and thin
 <img src="https://github.com/nightrome/cocostuff10k/blob/master/dataset/cocostuff-labelhierarchy.png?raw=true" alt="COCO-Stuff label hierarchy" width="100%">
 
 ## Semantic Segmentation Models (stuff+things)
+
+### PyTorch model
+We recommend [this third party re-implementation](https://github.com/kazuto1011/deeplab-pytorch) of Deeplab v2 in PyTorch. Contrary to our Caffe model, it supports ResNet and CRFs. The authors provide setup routines and models for COCO-Stuff 164K. Please file any issues or questions on the project's GitHub page.
+
+### Caffe model
+Here we provide the Caffe-based segmentation model used in the COCO-Stuff paper.
+However, for users not familiar with Caffe we recommend the above PyTorch model.
 Before using the semantic segmentation model, please [setup the dataset](#setup).
 The commands below download and install Deeplab (incl. Caffe), download or train the model and predictions and evaluate the performance. The results should be the same as in [the table](#results).
 Due to several issues, we do not provide the Deeplab ResNet101 model, but some code for it can be found in [this folder](https://github.com/nightrome/cocostuff/tree/master/models/deeplab).
