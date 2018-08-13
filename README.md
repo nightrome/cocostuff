@@ -45,14 +45,19 @@ Filename | Description | Size
 [stuff_trainval2017.zip](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuff_trainval2017.zip) | Stuff-only COCO-style annotations on COCO 2017 trainval | 543 MB
 [annotations_trainval2017.zip](http://images.cocodataset.org/annotations/annotations_trainval2017.zip) | Thing-only COCO-style annotations on COCO 2017 trainval | 241 MB
 [labels.md](https://github.com/nightrome/cocostuff/blob/master/labels.md) | Indices, names, previews and descriptions of the classes in COCO-Stuff | <10 KB
+[labels.txt](https://github.com/nightrome/cocostuff/blob/master/labels.txt) | Machine readable version of the label list | <10 KB
 [README.md](https://github.com/nightrome/cocostuff/blob/master/README.md) | This readme | <10 KB
 
 To use this dataset you will need to download the images (18+1 GB!) and annotations of the trainval sets.
-We sugggest using the stuffthingmaps, as they provide all stuff and thing labels in a single .png file per image.
+To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
+
+**Caffe-compatible stuff-thing maps**
+We suggest using the stuffthingmaps, as they provide all stuff and thing labels in a single .png file per image.
 Note that the .png files are [indexed images](https://en.wikipedia.org/wiki/Indexed_color), which means they store only the label indices and are typically displayed as grayscale images.
 To be compatible with most Caffe-based semantic segmentation methods, thing+stuff labels cover indices 0-181 and 255 indicates the 'unlabeled' or void class.
-Alternatively you can download the separate files for stuff and thing annotations in COCO format, which are compatible with the [COCO-Stuff API](https://github.com/nightrome/cocoapi).
-To download earlier versions of this dataset, please visit the [COCO 2017 Stuff Segmentation Challenge](http://cocodataset.org/#download) or [COCO-Stuff 10K](https://github.com/nightrome/cocostuff10k).
+
+**Separate stuff and thing downloads**
+Alternatively you can download the separate files for stuff and thing annotations in COCO format, which are compatible with the [COCO-Stuff API](https://github.com/nightrome/cocoapi). Note that the stuff annotations contain a class 'other' with index 183 that covers all non-stuff pixels.
 
 ## Setup
 Use the following instructions to download the COCO-Stuff dataset and setup the folder structure.
