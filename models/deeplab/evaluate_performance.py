@@ -95,7 +95,7 @@ for image_idx, image_name in enumerate(images):
     for v, c in zip(vals, cnts):
         g = v // n
         d = v % n
-        confusion[g - 1, d - 1] += c
+        confusion[g, d] += c
 
 # Evaluate performance
 [miou, fwiou, macc, pacc, ious, maccs] = _computeMetrics(confusion)
