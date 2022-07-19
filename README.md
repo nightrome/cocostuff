@@ -27,6 +27,7 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 
 ## Explore COCO-Stuff
 You can now use [Scale's Nucleus](https://dashboard.scale.com/nucleus) platform to explore the COCO-Stuff dataset. The platform allows you to search for images with specific annotations or using textual image descriptions. You can also identify potential annotation errors by comparing the predictions of an object detector to the ground-truth of COCO-Stuff. Registration is free! You can learn more at the Scale homepage link above.
+
 ![COCO-Stuff on Nucleus](nucleus.gif)
 
 ## Research Paper
