@@ -24,8 +24,11 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - Complex spatial context between stuff and things
 - 5 captions per image from COCO [2]
 
-## Research Paper
+## Explore COCO-Stuff using language
+You can now use [Scale's Nucleus](https://dashboard.scale.com/nucleus) platform to explore the COCO-Stuff dataset. The platform allows you to search for images with specific annotations or using textual image descriptions. You can also identify potential annotation errors by comparing the predictions of an object detector to the ground-truth of COCO-Stuff.
+![COCO-Stuff on Nucleus](https://media.giphy.com/media/OB91ZMx5KPiNoZ9obt/giphy.gif)
 
+## Research Paper
 [COCO-Stuff: Thing and Stuff Classes in Context](https://arxiv.org/abs/1612.03716)<br />
 H. Caesar, J. Uijlings, V. Ferrari,<br />
 In *Computer Vision and Pattern Recognition* (CVPR), 2018.<br />
