@@ -26,7 +26,7 @@ Welcome to official homepage of the COCO-Stuff [1] dataset. COCO-Stuff augments 
 - 5 captions per image from COCO [2]
 
 ## Explore COCO-Stuff
-You can now use [Scale's Nucleus](https://dashboard.scale.com/nucleus) platform to [explore the COCO-Stuff dataset](https://dashboard.scale.com/nucleus/ds_cazkx4cea0q007gdeqp0). The platform allows you to search for images with specific annotations or using textual image descriptions. You can also identify potential annotation errors by comparing the predictions of an object detector to the ground-truth of COCO-Stuff. Registration is free! You can learn more at the Scale homepage link above.
+You can now use [Scale's Nucleus](https://dashboard.scale.com/nucleus?utm_source=open_dataset&utm_medium=github&utm_campaign=coco_stuff) platform to [explore the COCO-Stuff dataset](https://dashboard.scale.com/nucleus/ds_cazkx4cea0q007gdeqp0?utm_source=open_dataset&utm_medium=github&utm_campaign=coco_stuff). The platform allows you to search for images with specific annotations or using textual image descriptions. You can also identify potential annotation errors by comparing the predictions of an object detector to the ground-truth of COCO-Stuff. Registration is free! You can learn more at the Scale homepage link above.
 
 ![COCO-Stuff on Nucleus](nucleus.gif)
 
