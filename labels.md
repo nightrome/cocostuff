@@ -4,6 +4,8 @@ We also include a preview image for each class that shows 4 example images with 
 Note that we only provide descriptions for stuff labels (92-182).
 Furthermore, 11 classes have been removed from COCO and therefore lack a preview image.
 
+The ids below match [labels.txt](labels.txt) and the separate stuff/thing COCO-format downloads. They are **not** the same as the pixel values used in the [caffe-compatible stuffthingmaps](README.md#downloads): those pixel values equal the id below minus 1, except for 'unlabeled', which has id 0 here but pixel value 255 in the stuffthingmaps.
+
 Note that despite our best efforts to make labels unambiguous, crowd-sourced annotations are never free of errors.
 In particular, the label 'clothes' is often assigned to incompletely annotated persons (which it should not).
 Furthermore, the difference between 'cupboard' and 'cabinet', 'fog' and 'sky-clouds' and 'cage' and 'fence' is not always clear from the annotations.

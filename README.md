@@ -60,6 +60,7 @@ To download earlier versions of this dataset, please visit the [COCO 2017 Stuff 
 We suggest using the stuffthingmaps, as they provide all stuff and thing labels in a single .png file per image.
 Note that the .png files are [indexed images](https://en.wikipedia.org/wiki/Indexed_color), which means they store only the label indices and are typically displayed as grayscale images.
 To be compatible with most Caffe-based semantic segmentation methods, thing+stuff labels cover indices 0-181 and 255 indicates the 'unlabeled' or void class.
+Note that this is a different indexing than the one used in [labels.txt](labels.txt) and [labels.md](labels.md): the pixel value in the stuffthingmaps equals the label id in `labels.txt` minus 1, except for the 'unlabeled' class, which has id 0 in `labels.txt` but pixel value 255 in the stuffthingmaps.
 
 **Separate stuff and thing downloads**
 Alternatively you can download the separate files for stuff and thing annotations in COCO format, which are compatible with the [COCO-Stuff API](https://github.com/nightrome/cocoapi). Note that the stuff annotations contain a class 'other' with index 183 that covers all non-stuff pixels.
